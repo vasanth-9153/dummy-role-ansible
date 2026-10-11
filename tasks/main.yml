@@ -1,0 +1,7 @@
+- name: Copy file with owner permissions
+  ansible.builtin.copy:
+    src: files/index.html
+    dest: /tmp/
+    owner: root
+    group: root
+    mode: '0644'
